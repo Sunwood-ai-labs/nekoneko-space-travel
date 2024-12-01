@@ -1,0 +1,12 @@
+phidata
+openai
+pandas
+plotly
+streamlit
+duckduckgo-search
+python-dotenv
+pydantic
+sqlalchemy
+psycopg2-binary
+stripe
+requests
