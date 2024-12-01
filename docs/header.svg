@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320">
+  <!-- Definitions for gradients and animations -->
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F172A">
+        <animate attributeName="stop-color" 
+          values="#0F172A;#1E293B;#0F172A"
+          dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#1E293B">
+        <animate attributeName="stop-color" 
+          values="#1E293B;#0F172A;#1E293B"
+          dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    
+    <!-- Planet glow effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Helmet glass reflection -->
+    <linearGradient id="helmetGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.2)"/>
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0)"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Rounded rectangle background with gradient -->
+  <rect width="1280" height="320" rx="20" ry="20" fill="url(#bgGradient)"/>
+  
+  <!-- Animated stars -->
+  <g id="stars">
+    <circle cx="100" cy="50" r="1" fill="white" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="200" cy="80" r="1.5" fill="white" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="40" r="1" fill="white" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;0.4;0.9" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="90" r="1.2" fill="white" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="60" r="1" fill="white" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.2;0.7" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="600" cy="70" r="1.3" fill="white" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;0.4;0.9" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="30" r="1" fill="white" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="800" cy="85" r="1.4" fill="white" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.2;0.7" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="900" cy="45" r="1" fill="white" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;0.4;0.9" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1000" cy="75" r="1.2" fill="white" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1100" cy="55" r="1" fill="white" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.2;0.7" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1200" cy="65" r="1.5" fill="white" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;0.4;0.9" dur="4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Animated planets -->
+  <g filter="url(#glow)">
+    <circle cx="980" cy="180" r="40" fill="#6366F1" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.6;0.8" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="980" cy="180" r="45" fill="none" stroke="#818CF8" stroke-width="2">
+      <animate attributeName="r" values="45;47;45" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <g filter="url(#glow)">
+    <circle cx="180" cy="150" r="25" fill="#F472B6" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.6;0.8" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="180" cy="150" r="30" fill="none" stroke="#FB7185" stroke-width="2">
+      <animate attributeName="r" values="30;32;30" dur="4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Space Cat -->
+  <g transform="translate(550, 160)">
+    <!-- Helmet -->
+    <circle cx="0" cy="0" r="45" fill="#E2E8F0" opacity="0.9"/>
+    <circle cx="0" cy="0" r="40" fill="#F8FAFC"/>
+    <!-- Helmet glass reflection -->
+    <path d="M -30 -20 Q 0 -40 30 -20" fill="url(#helmetGlass)" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0.2;0.5" dur="4s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Cat Face -->
+    <circle cx="-15" cy="-5" r="5" fill="#334155"/> <!-- Left Eye -->
+    <circle cx="15" cy="-5" r="5" fill="#334155"/> <!-- Right Eye -->
+    <path d="M -10 10 Q 0 15 10 10" stroke="#334155" stroke-width="2" fill="none"/> <!-- Smile -->
+    <path d="M -25 -25 L -15 -15 M -10 -30 L -5 -20" stroke="#334155" stroke-width="2"/> <!-- Left Whiskers -->
+    <path d="M 25 -25 L 15 -15 M 10 -30 L 5 -20" stroke="#334155" stroke-width="2"/> <!-- Right Whiskers -->
+    
+    <!-- Cat Ears -->
+    <path d="M -30 -35 L -45 -50 L -15 -50 Z" fill="#334155"/>
+    <path d="M 30 -35 L 45 -50 L 15 -50 Z" fill="#334155"/>
+  </g>
+  
+  <!-- Title Text with Shadow -->
+  <g>
+    <text x="640" y="260" fill="white" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" filter="url(#glow)">
+      NEKO NEKO SPACE TRAVEL
+    </text>
+  </g>
+  
+  <!-- Multiple Animated Shooting Stars -->
+  <g>
+    <path d="M 100 50 L 200 70" stroke="white" stroke-width="2" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 1100 30 L 1200 50" stroke="white" stroke-width="2" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="2;1;2" dur="3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>

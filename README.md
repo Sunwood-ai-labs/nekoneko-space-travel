@@ -1,7 +1,6 @@
-# 🐱 ねこねこスペーストラベル 🚀
-
 <div align="center">
-  <img src="docs/logo.png" width="300" height="300">
+  <img src="docs/header.svg" width="800">
+  <h1>🐱 Neko Neko Space Travel 🚀</h1>
   <h3>～ 宇宙への冒険をご一緒に ～</h3>
 </div>
 
