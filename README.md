@@ -1,3 +1,4 @@
+
 <div align="center">
   <img src="docs/header.svg" width="800">
   <h1>🐱 Neko Neko Space Travel 🚀</h1>
@@ -18,6 +19,15 @@
 - 😺 フレンドリーなねこスタッフ
 
 ## 🔧 技術スタック
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Phidata](https://img.shields.io/badge/phidata-FF6B6B?style=for-the-badge&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/postgresql-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Stripe](https://img.shields.io/badge/stripe-008CDD?style=for-the-badge&logo=stripe&logoColor=white)
+![Prometheus](https://img.shields.io/badge/prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
 
 - **バックエンド**: Python, phidata, OpenAI
 - **フロントエンド**: Streamlit
